@@ -259,7 +259,7 @@ local function send(child)
 		options.sndtimeo = 5
 		options.rcvtimeo = 5
 		options.method  = 'POST'
-		options.tls_context_set_verify = 'none'
+		options.tls_context_set_verify = 'peer'
 		options.cacert = CACERT
 		options.headers = headers
 
